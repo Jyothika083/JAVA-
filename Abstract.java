@@ -6,21 +6,35 @@ abstract class Shape
 }
 class Rectangle extends Shape
 {
-    void printArea(int a,int b)
+    getdata(int l,int h)
+    {
+        a=l;
+        b=h;
+    }
+    void printArea()
     {
         System.out.prinltn("Area of Rectangle= "+a*b);
     }
 }
 class Triangle extends Shape
 {
-    void printArea(int b,int h)
+    getdata(int ba,int h)
+    {
+        a=ba;
+        b=h;
+    }
+    void printArea()
     {
         System.out.println("Area of Triangle= "+0.5*b*h);
     } 
 }
 class Circle extends Shape
 {
-    void printArea(int r)
+    getdata(int r)
+    {
+        a=r;
+     }
+    void printArea()
     {
         System.out.println("Area of Circle= ",3.14*r*r);
     }
