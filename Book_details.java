@@ -13,12 +13,9 @@ class Book
         num_pages=no;
 
     }
-    void display()
+     public String toString()
     {
-        System.out.println("Book title :"+name);
-        System.out.println("Author name :"+author);
-        System.out.println("Price :"+price);
-        System.out.println("Number of pages :"+num_pages);
+        return name+"\t\t"+author+"\t\t"+price+"\t\t"+num_pages+"\n";
     }
 }
 class Book_details
@@ -46,9 +43,10 @@ class Book_details
             no=sc.nextInt();
             b[i]=new Book(n,a,p,no);
         }
+	  System.out.println("Book title\tAuthor name\tPrice\tNumber of pages");
         for(int i=0;i<count;i++)
         {
-            b[i].display();
+            System.out.println(b[i]);
         }
     }
 }
