@@ -49,6 +49,7 @@ class Abst
         Triangle t= new Triangle();
         Circle c=new Circle();
         System.out.println("1.Rectangle\n 2.Triangle\n 3.Circle\n 4.Exit");
+        System.out.println("Enter your choice");
         choice=sc.nextInt();
         switch(choice)
         {
